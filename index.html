@@ -1,0 +1,122 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Break Your Own News - Breaking News Generator</title>
+
+    <meta property="og:title" content="Break Your Own News - The Breaking News Generator">
+    <meta property="og:type" content="website">
+    <meta charset="utf-8" />
+    <meta property="og:url" content="https://www.questionbump.com/">
+    <meta property="og:site_name" content="Break Your Own News">
+    <meta property="og:description"
+          content="Today's top story... you! Or, whatever you want. Add your pic, write the headline and we'll go live to the scene. Sort of.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Signika:400,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap&subset=chinese-traditional" rel="stylesheet">
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="js/binary.js"></script>
+    <link type="text/css" href="css/style.css" rel="stylesheet" media="screen"/>
+    <link rel="shortcut icon" type="image/png" href="/logo.png"/>
+    <link rel="manifest" href="/manifest.json">
+
+    <!-- <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({
+            google_ad_client: "ca-pub-5839850886674419",
+            enable_page_level_ads: true
+        });
+    </script> -->
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'qng3nxz',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+</head>
+<body>
+<div class="container">
+    <div class="grid">
+        <section class="intro">
+            <div class="group">
+               
+
+                <p class="intro__text">News Generator Meme - Today's top story... you! Or, whatever you want.
+                    Add your pic, write the headline and we'll go live to the scene. Sort of.</p>
+            </div>
+
+            <div class="build-form">
+
+                <div class="build-form__item">
+                    <strong>Headline</strong><br/>
+                    <input id="textBox" placeholder="Write your story here..."/>
+                </div><!--
+             --><div class="build-form__item">
+                    <strong>Ticker</strong><br/>
+                    <input id="tickerBox" placeholder="Fill out the ticker with the latest updates..."/>
+                </div>
+                <strong>Your Image</strong><br/>
+                <input type="file" id="imageLoader" name="imageLoader"/>
+            </div>
+
+        </section><!--
+        --><section class="main">
+            <canvas id="canvasOne" width="1280" height="720" class="byon-canvas">
+                Your browser does not support HTML5 Canvas.
+            </canvas>
+
+            <div class="share-row">
+            <a href="#" class="button button--yellow" id="btn-download" download="breaking-news.png">Download</a>
+           
+
+                <div class="facebook-box">
+                    <p>Your post:</p>
+                    <input id="facebook-text" class="social-text" placeholder="Write your message here..." maxlength="300">
+                    <button class="button button--facebook" id="btn-facebook">Post it!</button>
+                </div>
+
+
+                <div class="twitter-box">
+                    <p>Write your tweet...</p>
+                    <input id="twitter-text" class="social-text"  value="Breaking News! http://breakyourownnews.com" maxlength="115">
+                    <button class="button button--twitter" id="btn-twitter">Post it!</button>
+                </div>
+
+                <div class="tumblr-box">
+                    <p>Choose which blog you'd like to post to...</p>
+                    <select class="select" id="tumblr__blogs"></select>
+                    <p>Add a caption...</p>
+                    <input id="tumblr__text" class="social-text" value="Breaking News! http://breakyourownnews.com" maxlength="300">
+                    <p>And add any tags you'd like... (separated by commas!)</p>
+                    <input id="tumblr__tags" class="social-text" value="break your own news, breakyourownnews" maxlength="300">
+                    <button class="button button--tumblr" id="btn-tumblr">Post it!</button>
+                </div>
+
+                <div class="upload-response"></div>
+            </div>
+
+ 
+        </section>
+    </div>
+    <!--  -->
+    
+</div>
+
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-12801420-1', 'auto');
+    ga('send', 'pageview');
+
+</script>
+</body>
+</html>

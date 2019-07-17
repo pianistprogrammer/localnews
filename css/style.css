@@ -1,0 +1,286 @@
+@font-face {
+    font-family: 'Signika';
+    src: url('../Signika/Signika-Bold.ttf'); /* IE9 Compat Modes */
+    src:url('../Signika/Signika-Regular.ttf')
+  }
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Signika', serif; 
+}
+ 
+.logo {
+    display: block;
+    width: 200px;
+    height: 180px;
+    background-image: url(logo.png);
+    text-indent: -9999px;
+    margin: 0 auto;
+    background-size: contain;
+}
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 15px auto;
+}
+
+.intro {
+    width: 30%;
+    padding-right: 20px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+}
+
+.intro__text {
+
+}
+
+.build-form {
+    text-align: left;
+}
+
+.build-form__item {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.build-form strong {
+    font-size: 110%;
+}
+
+.build-form input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+.select {
+    max-width: 400px;
+    width: 100%;
+    padding: 10px;
+}
+
+.main {
+    display: inline-block;
+    width: 70%;
+    vertical-align:top;
+    text-align: center;
+}
+
+.byon-canvas {
+    width: 100% !important;
+    height: auto;
+}
+
+.share-row {
+}
+
+.button {
+    padding: 12px;
+    border-radius: 4px;
+    background: #222;
+    font-weight: 400;
+    color: #fff;
+    display: inline-block;
+    font-size: 115%;
+    margin: 10px 5px;
+    box-shadow: inset 0 -4px 12px 2px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+    vertical-align: top;
+    border: 0;
+    font-family: 'Signika', sans-serif;
+}
+
+.button:hover {
+    box-shadow: inset 0 4px 12px 2px rgba(0, 0, 0, 0.1);
+}
+
+.button--yellow {
+    background: #feeb1a;
+    color: #000;
+}
+
+.button--facebook {
+    background: #3b5998;
+}
+
+.button--twitter {
+    background: #55acee;
+}
+
+.button--tumblr {
+    background: #35465c;
+}
+
+.twitter-share {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.upload-response:not(:empty) {
+    margin-bottom: 10px;
+}
+
+.facebook-box,
+.twitter-box,
+.tumblr-box {
+    display:none;
+}
+
+.social-text {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+
+}
+
+footer {
+    padding: 12px;
+    color: #fff;
+    font-size: 120%;
+    background-color: #CB0000;
+    border-radius: 4px;
+    box-shadow: inset 0 -4px 12px 2px rgba(0, 0, 0, 0.2);
+}
+
+footer a {
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.moneyplz__ads {
+    width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+@media only screen and (max-width: 980px) {
+    .intro {
+        width: 35%;
+        padding: 20px;
+    }
+
+
+    .intro__text {
+        font-size: 90%;
+    }
+
+    .main {
+        width: 65%;
+        padding-right: 20px;
+    }
+
+    .logo {
+        width: 150px;
+        height: 135px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    .container {
+        margin: 10px auto;
+    }
+
+    .intro {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .intro__text {
+        margin-top: 0;
+    }
+
+    .logo {
+        float: left;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        width: 100px;
+        height: 90px;
+    }
+
+    .main {
+        width: 100%;
+        padding: 0;
+    }
+
+    .build-form__item {
+        width: 48%;
+    }
+
+    .build-form__item:first-of-type {
+        margin-right: 4%;
+    }
+
+    .button {
+        padding: 8px;
+        font-size: 100%;
+        margin: 5px;
+    }
+
+    footer {
+        margin: 5px;
+        padding: 8px;
+        font-size: 90%;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (max-width: 400px) {
+
+    .build-form__item {
+        width: 100%;
+    }
+
+    .build-form__item:first-of-type {
+        margin-right: 0;
+    }
+}
+
+/* Portrait
+@media only screen
+and (max-device-width: 440px)
+and (orientation: portrait) {
+
+    .moneyplz {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        box-shadow: 0 -2px 8px rgba(0,0,0,0.2);
+    }
+
+    .moneyplz__ads {
+        margin: 0 auto;
+    }
+
+    footer {
+        margin-bottom: 110px;
+    }
+
+}
+*/
